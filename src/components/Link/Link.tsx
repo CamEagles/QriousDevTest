@@ -1,15 +1,15 @@
 import Xarrow from "react-xarrows";
 
 type LinkProps = {
-  start: string;
-  end: string;
+  parentNodeId: string;
+  childNodeId: string;
 };
 
 const Link = (linkProps: LinkProps) => {
   return (
     <Xarrow
-      start={linkProps.start}
-      end={linkProps.end}
+      start={linkProps.parentNodeId}
+      end={linkProps.childNodeId}
       startAnchor="bottom"
       endAnchor={"top"}
       path={"grid"}
