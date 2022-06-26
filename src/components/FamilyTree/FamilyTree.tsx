@@ -11,6 +11,7 @@ import { createNodeMappingPoints } from "../../helpers/layoutEngine";
 import Couple from "../Couple/Couple";
 import { createHierarchyNodeAndLink } from "../../helpers/hierarchy";
 import Link from "../Link/Link";
+import { Typography } from "@mui/material";
 
 type FamilyTreeProps = {
   title: string;
@@ -50,7 +51,7 @@ const FamilyTree = (props: FamilyTreeProps) => {
 
   return (
     <div className={styles.gridBackground}>
-      <div className={styles.title}>{props.title}</div>
+      <Typography className={styles.title}>{props.title}</Typography>
       {hierarchyNodes.map(
         (node) =>
           node.x &&
