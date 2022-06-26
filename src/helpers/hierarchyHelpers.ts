@@ -32,8 +32,6 @@ export const createHierarchyNodeAndLink = (
     newNode = {
       id: id,
       people: peopleToAddToNode,
-      x: 0,
-      y: 0,
     };
 
     if (parentNode) {
