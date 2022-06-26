@@ -4,12 +4,12 @@ import { Person } from "../../types/person";
 import {
   findChildrenAndTheirPartner,
   findRootParents,
-} from "../../helpers/personHelpers";
+} from "../../helpers/person";
 import { HierarchyNode } from "../../types/hierarchyNode";
 import { HierarchyLink } from "../../types/hierarchyLink";
 import { createNodeMappingPoints } from "../../helpers/layoutEngine";
 import Couple from "../Couple/Couple";
-import { createHierarchyNodeAndLink } from "../../helpers/hierarchyHelpers";
+import { createHierarchyNodeAndLink } from "../../helpers/hierarchy";
 import Link from "../Link/Link";
 
 type FamilyTreeProps = {
@@ -46,7 +46,7 @@ const FamilyTree = (props: FamilyTreeProps) => {
         setHierarchyLinks(newLinks);
       }
     }
-  }, [hierarchy, setHierarchyNodes, setHierarchyLinks]);
+  }, [hierarchy]);
 
   return (
     <div className={styles.gridBackground}>
