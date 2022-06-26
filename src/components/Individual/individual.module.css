@@ -1,0 +1,15 @@
+.individual {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  /* it looked like the image has a transparency set on these individual boxes */
+  opacity: 0.6;
+}
+
+.peopleIcon {
+  padding: 5px;
+}
+
+.name {
+  padding: 5px;
+}
