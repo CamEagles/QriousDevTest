@@ -1,6 +1,6 @@
 import "./App.css";
 import FamilyTree from "./components/FamilyTree/FamilyTree";
-import data from "./data/defaultData.json";
+import data from "./data/defaultData";
 
 function App() {
   return (
