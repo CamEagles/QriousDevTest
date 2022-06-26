@@ -1,8 +1,8 @@
 import { HierarchyLink } from "../types/hierarchyLink";
 import { HierarchyNode } from "../types/hierarchyNode";
 import { Person } from "../types/person";
-import { arrayComparision } from "./arrayHelpers";
-import { createHierarchyNodeAndLink } from "./hierarchyHelpers";
+import { arrayComparision } from "./array";
+import { createHierarchyNodeAndLink } from "./hierarchy";
 
 export const findRootParents = (hierarchyData: Person[]): Person[] => {
   // slim the list down to only people with no children.
