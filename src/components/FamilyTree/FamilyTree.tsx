@@ -59,7 +59,7 @@ const FamilyTree = (props: FamilyTreeProps) => {
           )
       )}
       {hierarchyLinks.map((link) => (
-        <Link start={link.ParentNodeId} end={link.ChildNodeId} />
+        <Link parentNodeId={link.ParentNodeId} childNodeId={link.ChildNodeId} />
       ))}
     </div>
   );
